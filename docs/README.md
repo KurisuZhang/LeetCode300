@@ -1,5 +1,282 @@
-# LeetCode300  
-├── 1.数据结构
-├── 2.算法
-├── 3.排序
-├── 4.设计
+# LeetCode
+
+[toc]
+
+## Tree
+
+| Method | Name | Difficulty |
+| ------ | :--- | :--------: |
+|        |      |            |
+|        |      |            |
+| E 🟢    | M 🟡  |    H 🔴     |
+
+
+
+
+
+
+
+| Method | Name | Difficulty |
+| ------ | :--- | :--------: |
+|        |      |            |
+|        |      |            |
+| E 🟢    | M 🟡  |    H 🔴     |
+
+
+
+
+
+------
+
+------
+
+# #####
+
+## 1. Sliding Window
+
+解决连续空间问题
+
+| No.  | Name                                                         | difficulty |
+| ---- | ------------------------------------------------------------ | :--------: |
+|      | Maximum Sum Subarray of Size K                               |   Easy 🟢   |
+|      | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum) |  Medium 🟡  |
+|      | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters) |  Medium 🟡  |
+|      | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets) |  Medium 🟡  |
+|      | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |  Medium 🟡  |
+|      | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) |  Medium 🟡  |
+|      | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) |  Medium 🟡  |
+|      | [Permutation in String](https://leetcode.com/problems/permutation-in-string) |  Medium 🟡  |
+|      | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) |  Medium 🟡  |
+|      | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) |   Hard 🔴   |
+|      | [Concatenated Words](https://leetcode.com/problems/concatenated-words) |   Hard 🔴   |
+|      | [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k) |  Medium 🟡  |
+|      | [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) |   Hard 🔴   |
+
+
+
+## 2. Two Pointers
+
+对于 sort 的, 或者具有某种双指针移动有特定意义的问题
+
+通过前后指针对于不同条件下的移动, 解决问题
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+|      | [Two Sum](https://leetcode.com/problems/two-sum)             |   Easy 🟢   |  100%  |
+|      | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) |   Easy 🟢   | 66.28% |
+|      | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array) |   Easy 🟢   | 62.79% |
+|      | [3Sum](https://leetcode.com/problems/3sum)                   |  Medium 🟡  | 90.60% |
+|      | [3Sum Closest](https://leetcode.com/problems/3sum-closest)   |  Medium 🟡  | 70.84% |
+|      | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller)   |  Medium 🟡  | 42.62% |
+|      | [Sort Colors](https://leetcode.com/problems/sort-colors)     |  Medium 🟡  | 65.03% |
+|      | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |  Medium 🟡  | 88.44  |
+
+
+
+## 3. Fast & Slow pointers / hash
+
+解决是否 **重复出现** 或者 **存在循环**
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+| 141  | [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) |   Easy 🟢   | 60.41% |
+| 142  | [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) |  Medium 🟡  | 32.32% |
+| 202  | [202. Happy Number](https://leetcode.com/problems/happy-number) |   Easy 🟢   | 67.07% |
+| 876  | [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |   Easy 🟢   | 58.56% |
+
+
+
+## 4. Merge Intervals
+
+
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+|      | [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) |  Medium 🟡  | 97.45% |
+|      | [57. Insert Interval](https://leetcode.com/problems/insert-interval/) |  Medium 🟡  | 60.38% |
+|      | [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) |  Medium 🟡  | 67.03% |
+|      | [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |  Medium 🟡  | 61.09% |
+
+
+
+## 5. Cyclic Sort/hash
+
+缺失/重复出现
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+|      | [268. Missing Number](https://leetcode.com/problems/missing-number/) |   Easy 🟢   | 61.03% |
+|      | [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) |   Easy 🟢   | 39.56% |
+|      | [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) |  Medium 🟡  | 75.30% |
+|      | [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) |  Medium 🟡  | 68.78% |
+
+
+
+## 6. LinkedList
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+|      | [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |   Easy 🟢   | 69.68% |
+|      | [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) |  Medium 🟡  | 66.86% |
+|      | [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) |   Hard 🔴   | 74.56% |
+|      | [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |   Easy 🟢   | 81.84% |
+|      | [146. LRU Cache](https://leetcode.com/problems/lru-cache/)   |  Medium 🟡  | 98.36% |
+|      |                                                              |            |   %    |
+
+
+
+## 7.Tree
+
+Bfs
+
+- 最短路径
+- 遍历
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+|      | [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) |   Easy 🟢   | 19.23% |
+|      | [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) |   Easy 🟢   | 7.57%  |
+|      | [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) |   Easy 🟢   | 13.15% |
+|      | [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) |  Medium 🟡  | 51.68% |
+|      | [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |  Medium 🟡  | 65.98% |
+| 116  | [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) |  Medium 🟡  |   %    |
+| 107  | [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) |  Medium 🟡  |        |
+| 111  | [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) |   Easy 🟢   |        |
+| 637  | [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) |   Easy 🟢   |        |
+|      |                                                              |            |        |
+
+dfs
+
+- root-to-leaf path
+- 不到 path 可以用 prefix sum
+
+| No.  | Name                                                         | Difficulty | Freq |
+| ---- | ------------------------------------------------------------ | :--------: | :--: |
+|      | [112. Path Sum](https://leetcode.com/problems/path-sum/)     |   Easy 🟢   |      |
+|      | [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/) |  Medium 🟡  |      |
+|      | [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) |  Medium 🟡  |      |
+|      | [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/) |  Medium 🟡  |      |
+|      |                                                              |            |      |
+
+Pre-in Order
+
+| No.  | Name                                                         | Difficulty | Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :---: |
+|      | [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) |  Medium 🟡  | 55.51 |
+|      | [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |  Medium 🟡  | 52.01 |
+
+## Tries
+
+
+
+| No.  | Name                                                         | Difficulty | Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :---: |
+|      | [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) |  Medium 🟡  | 58.13 |
+|      |                                                              |            |       |
+
+## 8. Heap
+
+双 heap - median 值
+
+| No.                         | Name                                                         | Difficulty |  Freq  |
+| --------------------------- | ------------------------------------------------------------ | :--------: | :----: |
+| Median                      | [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) |   Hard 🔴   | 81.43% |
+| ~                           | [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) |   Hard 🔴   | 65.27% |
+| Kth Largest                 | [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) |  Medium 🟡  | 89.77% |
+| ~                           | [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) |  Medium 🟡  | 66.19% |
+| 修改 comparator + Kth small | [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) |  Medium 🟡  | 77.17% |
+| Frequent(核心统计次数)      | [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) |  Medium 🟡  | 81.82% |
+| ~                           | [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) |  Medium 🟡  | 46.55% |
+| ~                           | [1481. Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/) |  Medium 🟡  | 60.05  |
+| Merge k list                | [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) |   Hard 🔴   | 84.79  |
+|                             |                                                              |            |        |
+|                             |                                                              |            |        |
+
+
+
+## 9. Subset
+
+| No.               | Name                                                         | Difficulty | Freq |
+| ----------------- | ------------------------------------------------------------ | :--------: | :--: |
+| 子集,顺序无关     | [78. Subsets](https://leetcode.com/problems/subsets/)        |  Medium 🟡  |      |
+| 移除相同          | [90. Subsets II](https://leetcode.com/problems/subsets-ii/)  |  Medium 🟡  |      |
+| 排列组合,顺序有关 | [46. Permutations](https://leetcode.com/problems/permutations/) |  Medium 🟡  |      |
+|                   | [784. Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) |  Medium 🟡  |      |
+|                   | [320. Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) |  Medium 🟡  |      |
+
+## 10. Back tracking
+
+| No.  | Name                                                         | Difficulty | Freq |
+| ---- | ------------------------------------------------------------ | :--------: | :--: |
+|      | [320. Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/) |  Medium 🟡  |      |
+|      | [136. Single Number](https://leetcode.com/problems/single-number/) |            |      |
+
+
+
+
+
+## 11.Binary Search
+
+
+
+| No.                                          | Name                                                         | Difficulty |  Freq  |
+| -------------------------------------------- | ------------------------------------------------------------ | :--------: | :----: |
+| 寻找这个数字,Return mid                      | [704. Binary Search](https://leetcode.com/problems/binary-search/) |   Easy 🟢   |        |
+| Ceiling,不相等+1<br>相等 return              | [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) |   Easy 🟢   |        |
+| 不寻找这个数字,greater than<br/>Return start | [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) |   Easy 🟢   | 43.62% |
+| 重复相等数字的区间Return mid                 | [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |  Medium 🟡  | 78.28% |
+|                                              | [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) |  Medium 🟡  | 50.85  |
+
+
+
+
+
+## 12.Bitwise
+
+| No.  | Name                                                         | Difficulty |  Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :----: |
+|      | [260. Single Number III](https://leetcode.com/problems/single-number-iii/) |  Medium 🟡  | 43.32$ |
+|      | [136. Single Number](https://leetcode.com/problems/single-number/) |   Easy 🟢   | 69.31% |
+|      | [1009. Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/) |   Easy 🟢   | 54.78% |
+|      |                                                              |            |        |
+
+
+
+## 13. Comparator
+
+| No.  | Name                                                         | Difficulty | Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :---: |
+|      | [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements/) |  Medium 🟡  | 69.21 |
+|      |                                                              |            |       |
+
+
+
+## 14.Dynamic Programming
+
+|                                                      | Name                                                         | Difficulty | Freq  |
+| ---------------------------------------------------- | ------------------------------------------------------------ | :--------: | :---: |
+| 横向                                                 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) |   Easy 🟢   | 75.84 |
+| ~                                                    | [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) |   Easy 🟢   | 37.17 |
+| ~ 总情况数                                           | [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) |   Easy 🟢   | 78.06 |
+| 纵向~ 最后一个特殊处理(存在路径)                     | [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/?envType=study-plan&id=dynamic-programming-i) |   Easy 🟢   | 55.79 |
+| ~                                                    | [198. House Robber](https://leetcode.com/problems/house-robber/) |  Medium 🟡  | 79.92 |
+| 01背包,所有自己,再某一个范围内的某一个性质(所有子项) | [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) |  Medium 🟡  | 65.32 |
+|                                                      | [2035. Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) |   Hard 🔴   |       |
+|                                                      |                                                              |            |       |
+
+
+
+## 15.Topological Sort
+
+
+
+## 16 Stack
+
+|      | Name                                                         | Difficulty | Freq  |
+| ---- | ------------------------------------------------------------ | :--------: | :---: |
+|      | [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) |  Medium 🟡  | 67.14 |
+|      |                                                              |            |       |
+|      |                                                              |            |       |
+|      |                                                              |            |       |
+|      |                                                              |            |       |
+
