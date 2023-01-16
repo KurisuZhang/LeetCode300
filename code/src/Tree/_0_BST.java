@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class BST<E extends Comparable<E>> {
+public class _0_BST<E extends Comparable<E>> {
 
     private class Node{
         public E e;
@@ -20,7 +20,7 @@ public class BST<E extends Comparable<E>> {
     private Node root;
     private int size;
 
-    public BST(){
+    public _0_BST(){
         root = null;
         size = 0;
     }
