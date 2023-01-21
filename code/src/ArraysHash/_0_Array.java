@@ -26,6 +26,14 @@ public class _0_Array<E> {
         return size;
     }
 
+    public E getLast(){
+        return get(size - 1);
+    }
+
+    public E getFirst(){
+        return get(0);
+    }
+
     // 返回数组是否为空
     public boolean isEmpty(){
         return size == 0;
