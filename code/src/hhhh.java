@@ -1,13 +1,25 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class hhhh {
+
+
     public static void main(String[] args) {
+        List<Character> list = new ArrayList<>();
+        list.add('c');
+        list.add('a');
 
-        List<Integer> result=Arrays.asList(1,2,3,4,5,6);
-        System.out.println(result);
+        StringBuilder stringBuilder = new StringBuilder();
 
+        for (Character c :
+                list) {
+            stringBuilder.append(c);
+        }
+
+        System.out.println(stringBuilder.toString());
 
     }
+
+
+
 }

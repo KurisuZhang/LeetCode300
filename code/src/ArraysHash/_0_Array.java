@@ -11,6 +11,13 @@ public class _0_Array<E> {
         size = 0;
     }
 
+    public  _0_Array(E[] arr){
+        data = (E[])new Object[arr.length];
+        for(int i = 0 ; i < arr.length ; i ++)
+            data[i] = arr[i];
+        size = arr.length;
+    }
+
     // 无参数的构造函数，默认数组的容量capacity=10
     public _0_Array(){
         this(10);
@@ -64,6 +71,16 @@ public class _0_Array<E> {
     // 在所有元素前添加一个新元素
     public void addFirst(E e){
         add(0, e);
+    }
+
+    public void swap(int i, int j){
+
+        if(i < 0 || i >= size || j < 0 || j >= size)
+            throw new IllegalArgumentException("Index is illegal.");
+
+        E t = data[i];
+        data[i] = data[j];
+        data[j] = t;
     }
 
     // 获取index索引位置的元素
