@@ -35,6 +35,8 @@
 | 判断相等,hashMap记录出现次数                                 | [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) |    E 🟢     |  n   |
 | 找出两个数符合某种 pattern<br />hashmap 附上序号区分不同的元素 | [1. Two Sum](https://leetcode.com/problems/two-sum/)         |    E 🟢     |  n   |
 | 找出所有的 anagram,排序最为hash                              | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) |    M 🟡     |  nk  |
+|                                                              | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) |    E 🟢     |      |
+| 存 %60 的 frequency                                          | [1010. Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) |    M 🟡     |  n   |
 |                                                              |                                                              |            |      |
 | E 🟢                                                          | M 🟡                                                          |    H 🔴     |      |
 
@@ -64,13 +66,17 @@
 
 ## Stack
 
-| Method                                         | Name                                                         | Difficulty |  TC  |
-| ---------------------------------------------- | :----------------------------------------------------------- | :--------: | :--: |
-| Stack,套 map                                   | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |    E 🟢     |  n   |
-| Two stack, 嵌套 stack,增加空间,减少时间        | [155. Min Stack](https://leetcode.com/problems/min-stack/)   |    M 🟡     |  1   |
-| Monitonic Stack, [思路](./5.题解思路/Stack.md) | [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) |    M 🟡     |      |
-|                                                |                                                              |            |      |
-| E 🟢                                            | M 🟡                                                          |    H 🔴     |      |
+mono stack 可以求最小值最大值的管辖范围
+
+| Method                                                | Name                                                         | Difficulty |  TC  |
+| ----------------------------------------------------- | :----------------------------------------------------------- | :--------: | :--: |
+| Stack,套 map                                          | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |    E 🟢     |  n   |
+| Two stack, 嵌套 stack,增加空间,减少时间               | [155. Min Stack](https://leetcode.com/problems/min-stack/)   |    M 🟡     |  1   |
+| Monitonic Stack, [思路](./5.题解思路/Stack.md)        | [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) |    M 🟡     |      |
+| Monitonic Stack + presum[思路](./5.题解思路/Stack.md) | [2281. Sum of Total Strength of Wizards](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) |    H 🔴     |  n   |
+|                                                       | [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/) |    M 🟡     |  n   |
+|                                                       |                                                              |            |      |
+| E 🟢                                                   | M 🟡                                                          |    H 🔴     |      |
 
 
 
@@ -152,21 +158,23 @@
 
 ## Dynamic Programming
 
-| Method                                                      | Name                                                         | Difficulty |  TC   |
-| ----------------------------------------------------------- | :----------------------------------------------------------- | :--------: | :---: |
-| Buy,sell                                                    | [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |    H 🔴     | $n^2$ |
-| dp[i] = dp[i - 1] + dp[i - 2]                               | [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) |    E 🟢     |   n   |
-| dp[i] = Math.min(dp[i - 1] + cost[i], dp[i - 2] + cost[i]); | [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) |    E 🟢     |   n   |
-| dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);           | [198. House Robber](https://leetcode.com/problems/house-robber/) |    M 🟡     |   n   |
-| 走两次                                                      | [213. House Robber II](https://leetcode.com/problems/house-robber-ii/) |    M 🟡     |   n   |
-|                                                             | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |    M 🟡     | $n^2$ |
-|                                                             | [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) |    M 🟡     | $n^2$ |
-| $dp[i] = Math.max(dp[i], dp[j] + 1)$                        | [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |    M 🟡     | $n^2$ |
-|                                                             |                                                              |            |       |
-| $dp[i][j] = dp[i - 1][j] + dp[i][j - 1];$                   | [62. Unique Paths](https://leetcode.com/problems/unique-paths/) |    M 🟡     |  m*n  |
-|                                                             | [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) |    M 🟡     |       |
-|                                                             |                                                              |            |       |
-| E 🟢                                                         | M 🟡                                                          |    H 🔴     |       |
+| Method                                                       | Name                                                         | Difficulty |    TC     |
+| ------------------------------------------------------------ | :----------------------------------------------------------- | :--------: | :-------: |
+| Buy,sell                                                     | [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) |    H 🔴     |   $n^2$   |
+| dp[i] = dp[i - 1] + dp[i - 2]                                | [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) |    E 🟢     |     n     |
+| dp[i] = Math.min(dp[i - 1] <br />+ cost[i], dp[i - 2] + cost[i]); | [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) |    E 🟢     |     n     |
+| dp[i] = Math.max(dp[i - 1], <br />dp[i - 2] + nums[i]);      | [198. House Robber](https://leetcode.com/problems/house-robber/) |    M 🟡     |     n     |
+| 走两次                                                       | [213. House Robber II](https://leetcode.com/problems/house-robber-ii/) |    M 🟡     |     n     |
+|                                                              | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |    M 🟡     |   $n^2$   |
+|                                                              | [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) |    M 🟡     |   $n^2$   |
+| $dp[i] = Math.max(dp[i], dp[j] + 1)$                         | [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) |    M 🟡     |   $n^2$   |
+| $dp[i][j] = dp[i - 1][j] + dp[i][j - 1];$                    | [62. Unique Paths](https://leetcode.com/problems/unique-paths/) |    M 🟡     |    m*n    |
+|                                                              | [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) |    M 🟡     |           |
+| [思路](./5.题解思路/DP.md)                                   | [2272. Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/) |    H 🔴     | 26\*26\*n |
+|                                                              | [1444. Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/) |    H 🔴     | kmn(m+n)  |
+| 正反走取左右最大值边界                                       | [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) |    H 🔴     |           |
+|                                                              |                                                              |            |           |
+| E 🟢                                                          | M 🟡                                                          |    H 🔴     |           |
 
 
 
@@ -237,6 +245,16 @@
 |        | [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/) |    M 🟡     |  n   |
 |        |                                                              |            |      |
 | E 🟢    | M 🟡                                                          |    H 🔴     |      |
+
+
+
+## Design
+
+| Method        | Name                                                       | Difficulty |  TC  |
+| ------------- | :--------------------------------------------------------- | :--------: | :--: |
+| LinkedHashMap | [146. LRU Cache](https://leetcode.com/problems/lru-cache/) |    M 🟡     |      |
+|               |                                                            |            |      |
+| E 🟢           | M 🟡                                                        |    H 🔴     |      |
 
 
 

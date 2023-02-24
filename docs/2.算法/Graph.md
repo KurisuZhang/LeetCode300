@@ -52,20 +52,41 @@ dfs(int v){
 visited[0...V] = false;
 
 for(int v = 0; v < V; v ++)
-    if(!visited[v]){
+    if( !visited[v] && (****) ){
         dfs(v, list[i]);
         cccout ++;
-        i ++;
 }
 
 dfs(int v, list){
      visited[w] = true;
      list.add(v);
      for(int w: adj(v))
-         if(!visited[w])
+         if(!visited[w]&& (****))
              dfs(w, list);
 }
 ```
+
+后写终止条件
+
+```java
+if (i < 0 || j < 0 || i > grid.length - 1 || j > grid[0].length - 1) {
+    return;
+}
+if (visited[i][j]) {
+    return;
+}
+
+visited[i][j] = true;
+
+if (grid[i][j] == '1') {
+    dfs(i - 1, j);
+    dfs(i + 1, j);
+    dfs(i, j - 1);
+    dfs(i, j + 1);
+}
+```
+
+
 
 ### 单源路径
 
